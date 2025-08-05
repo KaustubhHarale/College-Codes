@@ -1,0 +1,8 @@
+#Code for good morning using GCC command and C language 
+
+#include<stdio.h>
+int main()
+{
+printf (" Good morning \n ");
+return 0;
+}

@@ -1,0 +1,3 @@
+gcc  hello.c ( To compile the program )
+Sudo apt install gcc ( to install gcc )
+./a. To run the output program

@@ -1,0 +1,29 @@
+#include "stdio.h"
+#include "math.h"
+void main () 
+{
+int math, chem, physics, english, coding , total;
+float avg;
+
+printf ("Marks scored in math out of 100 ::");
+scanf ("%d",&math);
+
+printf ("Marks scored in chem out of 100 :: ");
+scanf ("%d",&chem);
+
+printf ("Marks scored in physics out of 100 :: ");
+scanf ("%d",&physics);
+
+printf ("Marks scored in english out of 100 :: ");
+scanf ("%d",&english);
+
+
+printf ("Marks scored in coding out of 100 :: ");
+scanf ("%d",&coding);
+
+total = math+chem+physics+english+coding;
+avg = (total/500);
+printf ("Total marks are %d\n",total);
+printf ("Average of marks are %f\n", avg);
+
+}

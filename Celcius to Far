@@ -1,0 +1,10 @@
+#include "stdio.h"
+void main () 
+{
+float Cel, Far;
+printf("Enter the value of Celcius");
+scanf (" %f",&Far);
+Far=(Cel*9/5)+32;
+printf ("The temprature in Farhenite will be %f\n",Far);
+
+}

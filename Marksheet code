@@ -22,8 +22,8 @@ printf ("Marks scored in coding out of 100 :: ");
 scanf ("%d",&coding);
 
 total = math+chem+physics+english+coding;
-avg = (total/500);
+avg = ((float)total/500);
 printf ("Total marks are %d\n",total);
-printf ("Average of marks are %f\n", avg);
+printf ("Average of marks are %.2f\n", avg);
 
 }

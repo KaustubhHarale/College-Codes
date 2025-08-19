@@ -1,0 +1,18 @@
+
+#include "stdio.h"
+void main () 
+{
+int a,b,c;
+printf ("Enter the first number");
+scanf("%d",&a);
+
+printf ("Enter the second number");
+scanf("%d",&b);
+
+printf ("Choose the operation Addition 1 , Multiplication 2 , subtraction 3 ");
+scanf ("%d",)
+
+c=a+b;
+printf("sum is %d\n",c);
+return 0
+}

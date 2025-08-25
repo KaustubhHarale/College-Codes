@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+void main()
+{
+float a,da,hra,gs;
+
+printf("Enter your salary\n");
+scanf("%f", &a);
+
+da=(a*50)/100;
+hra=(a*20)/100;
+gs= a+da+hra;
+
+printf("Your total salary is: \n%f", gs);
+}

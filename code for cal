@@ -1,0 +1,43 @@
+void main() 
+{
+float side1, side2,radius,perimeter,areaC,areaT;
+float areaR,areaS,areaH,length,breadth,base,height;
+
+printf ("Enter the radius for circle : ");
+scanf ("%f \n", &radius);
+
+perimeter = 2*3.4*radius;
+areaC = 2*3.4*radius*radius;
+
+printf ("Enter the length of rectangle : ");
+scanf ("%f \n", &length);
+printf ("Enter the breadth of rectangle : ");
+scanf ("%f \n ", &breadth);
+
+areaR = length * breadth;
+
+printf ("Enter the value of Side for square : ");
+scanf ("%f \n", &side1);
+
+areaS = side1*side1;
+
+printf ("Enter the value of base : ");
+scanf ("%f \n", &base);
+printf ("Enter the value of height : ");
+scanf ("%f \n", &height);
+
+areaT = (base*height)/2;
+
+printf ("Enter the value of side for hexagon : ");
+scanf ("%f \n", &side2);
+
+areaH = (side2*side2)*(3*1.7)/2;
+
+printf("Perimeter of circle : \n", perimeter );
+printf("area of circle : \n", areaC );
+printf("area of rectangle : \n", areaR );
+printf("area of square : \n", areaS );
+printf("area of triangle : \n", areaT );
+printf("area of hexagon : \n", areaH );
+
+}

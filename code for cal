@@ -1,43 +1,32 @@
+#include <stdio.h>
 void main() 
 {
 float side1, side2,radius,perimeter,areaC,areaT;
 float areaR,areaS,areaH,length,breadth,base,height;
-
-printf ("Enter the radius for circle : ");
-scanf ("%f \n", &radius);
-
-perimeter = 2*3.4*radius;
-areaC = 2*3.4*radius*radius;
-
-printf ("Enter the length of rectangle : ");
-scanf ("%f \n", &length);
-printf ("Enter the breadth of rectangle : ");
-scanf ("%f \n ", &breadth);
-
+printf ("Enter the radius for circle :\n ");
+scanf ("%f", &radius);
+perimeter = 2*3.14*radius;
+areaC = 2*3.4*(radius*radius);
+printf ("Enter the length of rectangle :\n ");
+scanf ("%f", &length);
+printf ("Enter the breadth of rectangle :\n ");
+scanf ("%f", &breadth);
 areaR = length * breadth;
-
-printf ("Enter the value of Side for square : ");
-scanf ("%f \n", &side1);
-
+printf ("Enter the value of Side for square :\n ");
+scanf ("%f", &side1);
 areaS = side1*side1;
-
-printf ("Enter the value of base : ");
-scanf ("%f \n", &base);
-printf ("Enter the value of height : ");
-scanf ("%f \n", &height);
-
+printf ("Enter the value of base :\n ");
+scanf ("%f", &base);
+printf ("Enter the value of height :\n ");
+scanf ("%f", &height);
 areaT = (base*height)/2;
-
-printf ("Enter the value of side for hexagon : ");
-scanf ("%f \n", &side2);
-
+printf ("Enter the value of side for hexagon :\n ");
+scanf ("%f", &side2);
 areaH = (side2*side2)*(3*1.7)/2;
-
-printf("Perimeter of circle : \n", perimeter );
-printf("area of circle : \n", areaC );
-printf("area of rectangle : \n", areaR );
-printf("area of square : \n", areaS );
-printf("area of triangle : \n", areaT );
-printf("area of hexagon : \n", areaH );
-
+printf("Perimeter of circle : %.2f\n", perimeter);
+printf("area of circle : %.2f\n", areaC);
+printf("area of rectangle : %.2f\n", areaR);
+printf("area of square : %.2f\n", areaS);
+printf("area of triangle : %.2f\n", areaT);
+printf("area of hexagon : %.2f\n", areaH);
 }

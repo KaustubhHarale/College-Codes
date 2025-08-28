@@ -1,0 +1,92 @@
+#include<stdio.h>
+void main() 
+{
+float SC, VC, SCU, VCU, SP, VP, SCY, VCY, SPY, VPY, SCO, VCO, SSP, VSP;
+float sideC, lengthCu, breadthCu, heightCu, basePr, periPr, heightPr, radiusCy;
+float heightCy, basePy, lateralPy, heightPy, radiusCo, lengthCo, heightCo;
+float rrr;
+
+printf("Enter the value of side for cone :\n ");
+scanf("%f", &sideC);
+
+SC=(sideC*sideC)*6;
+VC=sideC*sideC*sideC;
+
+printf("Enter the value of length for cuboid :\n ");
+scanf("%f", &lengthCu);
+
+printf("Enter the value of breadth for cuboid :\n");
+scanf("%f", &breadthCu);
+
+printf("Enter the value of height for Cuboid :\n ");
+scanf("%f", &heightCu);
+
+SCU=2*(lengthCu+breadthCu+heightCu);
+VCU= lengthCu*breadthCu*heightCu;
+
+printf("Enter the value of Base area for prism :\n");
+scanf("%f", &basePr);
+
+printf("Enter the value of base for prism :\n");
+scanf("%f", &periPr);
+
+printf("Enter the value of height for prism :\n");
+scanf("%f", &heightPr);
+
+SP= 2*(basePr+periPr)*heightPr;
+VP= basePr*heightPr;
+
+printf("Enter the value of radius for cylinder :\n");
+scanf("%f", &radiusCy);
+
+printf("Enter the value of height for cylinder :\n");
+scanf("%f", &heightCy);
+
+SCY= 2*3.14*(radiusCy + heightCy);
+VCY= 3.14*(radiusCy*radiusCy)*heightCy;
+
+printf("Enter the value of base area for pyramid :\n");
+scanf("%f", &basePy);
+
+printf("Enter the value of Lateral for pyramid :\n");
+scanf("%f", &lateralPy);
+
+printf("Enter the value of height for pyramid :\n");
+scanf("%f", &heightPy);
+
+SPY=basePy+lateralPy;
+VPY=(basePy*heightPy)/3;
+
+printf("Enter the value of radius for cone :\n");
+scanf("%f", &radiusCo);
+
+printf("Enter the value of length for cone :\n");
+scanf("%f", &lengthCo);
+
+printf("Enter the value of height for cone :\n");
+scanf("%f", &heightCo);
+
+SCO= 3.14*radiusCo*(lengthCo+radiusCo);
+VCO= (3.14*(radiusCo*radiusCo)*heightCo)/3;
+
+printf("Enter the value of radius for sphere :\n");
+scanf("%f",&rrr);
+
+SSP= 4*3.14*(rrr*rrr);
+VSP= (4/3)*3.14*(rrr*rrr*rrr);
+
+printf("Surface area of cube : %.2f\n", SC);
+printf("Volume of cube : %.2f\n", VC);
+printf("Surface area of cuboid : %.2f\n", SCU);
+printf("Volume of cuboid : %.2f\n", VCU);
+printf("Surface area of prism : %.2f\n", SP);
+printf("Volume of prism : %.2f\n", VP);
+printf("Surface area of cylinder : %.2f\n", SCY);
+printf("Volume of cylinder : %.2f\n", VCY);
+printf("Surface area of Pyramid : %.2f\n", SPY);
+printf("Volume of pyramid : %.2f\n", VPY);
+printf("Surface area of Cone : %.2f\n", SCO);
+printf("Volume of Cone : %.2f\n", VCO);
+printf("Surface area of sphere : %.2f\n", SSP);
+printf("Volume of sphere : %.2f\n", VSP);
+}

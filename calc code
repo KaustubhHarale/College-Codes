@@ -1,0 +1,95 @@
+#include<stdio.h>
+void main() 
+{
+float SC, VC, SCU, VCU, SP, VP, SCY, VCY, SPY, VPY, SCO, VCO, SSP, VSP;
+float sideC, lengthCu, breadthCu, heightCu, basePr, periPr, heightPr, radiusCy;
+float heightCy, basePy, lateralPy, heightPy, radiusCo, lengthCo, heightCo;
+float rrr;
+int A;
+
+printf("Select the shape you want to calculate surface area and volume for:\n");
+printf("1. Cone \n 2. Cuboid \n 3. Prism \n 4. Cylinder \n 5. Pyramid \n 6. sphere \n");
+scanf("%d", &A);
+
+if (A == 1);  
+{
+printf("Enter the value of side for cone :\n ");
+scanf("%f", &sideC);
+SC=(sideC*sideC)*6;
+VC=sideC*sideC*sideC;
+}
+else if (A == 2);
+{
+printf("Enter the value of length for cuboid :\n ");
+scanf("%f", &lengthCu);
+
+printf("Enter the value of breadth for cuboid :\n");
+scanf("%f", &breadthCu);
+
+printf("Enter the value of height for Cuboid :\n ");
+scanf("%f", &heightCu);
+
+SCU=2*(lengthCu+breadthCu+heightCu);
+VCU= lengthCu*breadthCu*heightCu;
+}
+else if (A == 3);
+{
+printf("Enter the value of Base area for prism :\n");
+scanf("%f", &basePr);
+
+printf("Enter the
+printf("Enter the value of base for prism :\n");
+scanf("%f", &periPr);
+
+printf("Enter the value of height for prism :\n");
+scanf("%f", &heightPr);
+
+SP= 2*(basePr+periPr)*heightPr;
+VP= basePr*heightPr;
+}
+else if (A == 4);
+{
+printf("Enter the value of radius for cylinder :\n");
+scanf("%f", &radiusCy);
+
+printf("Enter the value of height for cylinder :\n");
+scanf("%f", &heightCy);
+
+SCY= 2*3.14*(radiusCy + heightCy);
+VCY= 3.14*(radiusCy*radiusCy)*heightCy;
+}
+else if (A == 5);
+{ "value of base area for pyramid :\n");
+scanf("%f", &basePy);
+
+printf("Enter the value of Lateral for pyramid :\n");
+scanf("%f", &lateralPy);
+
+printf("Enter the value of height for pyramid :\n");
+scanf("%f", &heightPy);
+
+SPY=basePy+lateralPy;
+VPY=(basePy*heightPy)/3;
+}
+else if (A == 6);
+{
+printf("Enter the value of radius for cone :\n");
+scanf("%f", &radiusCo);
+
+printf("Enter the value of length for cone :\n");
+scanf("%f", &lengthCo);
+
+printf("Enter the value of height for cone :\n");
+scanf("%f", &heightCo);
+
+SCO= 3.14*radiusCo*(lengthCo+radiusCo);
+VCO= (3.14*(radiusCo*radiusCo)*heightCo)/3;
+}
+else if (A == 7);
+{
+printf("Enter the value of radius for sphere :\n");
+scanf("%f",&rrr);
+SSP= 4*3.14*(rrr*rrr);
+VSP= (4/3)*3.14*(rrr*rrr*rrr);
+}
+}

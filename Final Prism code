@@ -1,5 +1,5 @@
 #include<stdio.h>
-int main() 
+void main() 
 {
 float SC, VC, SCU, VCU, SP, VP, SCY, VCY, SPY, VPY, SCO, VCO, SSP, VSP;
 float sideC, lengthCu, breadthCu, heightCu, basePr, periPr, heightPr, radiusCy;
@@ -11,17 +11,17 @@ printf("Select the shape you want to calculate surface area and volume for:\n");
 printf("1. Cone \n 2. Cuboid \n 3. Prism \n 4. Cylinder \n 5. Pyramid \n 6. sphere \n");
 scanf("%d", &A);
 
-if (A == 1);  
+if (A == 1)  
 {
 printf("Enter the value of side for cone :\n ");
 scanf("%f", &sideC);
-SC=(sideC*sideC)*6;
-VC=sideC*sideC*sideC;
+SCO=(sideC*sideC)*6;
+VCO=sideC*sideC*sideC;
 printf("Surface area of Cone : %.2f\n", SCO);
 printf("Volume of Cone : %.2f\n", VCO);
-return 0;
+
 }
-else if (A == 2);
+else if (A == 2)
 {
 printf("Enter the value of length for cuboid :\n ");
 scanf("%f", &lengthCu);
@@ -37,14 +37,13 @@ VCU= lengthCu*breadthCu*heightCu;
 
 printf("Surface area of cuboid : %.2f\n", SCU);
 printf("Volume of cuboid : %.2f\n", VCU);
-return 0;
+
 }
-else if (A == 3);
+else if (A == 3)
 {
 printf("Enter the value of Base area for prism :\n");
 scanf("%f", &basePr);
 
-printf("Enter the
 printf("Enter the value of base for prism :\n");
 scanf("%f", &periPr);
 
@@ -57,9 +56,9 @@ VP= basePr*heightPr;
 printf("Surface area of prism : %.2f\n", SP);
 printf("Volume of prism : %.2f\n", VP);
 
-return 0;
+
 }
-else if (A == 4);
+else if (A == 4)
 {
 printf("Enter the value of radius for cylinder :\n");
 scanf("%f", &radiusCy);
@@ -73,10 +72,11 @@ VCY= 3.14*(radiusCy*radiusCy)*heightCy;
 printf("Surface area of cylinder : %.2f\n", SCY);
 printf("Volume of cylinder : %.2f\n", VCY);
 
-return 0;
+
 }
-else if (A == 5);
-{ "value of base area for pyramid :\n");
+else if (A == 5)
+{ 
+printf("value of base area for pyramid :\n");
 scanf("%f", &basePy);
 
 printf("Enter the value of Lateral for pyramid :\n");
@@ -91,10 +91,8 @@ VPY=(basePy*heightPy)/3;
 printf("Surface area of Pyramid : %.2f\n", SPY);
 printf("Volume of pyramid : %.2f\n", VPY);
 
-return 0;
-
 }
-else if (A == 6);
+else if (A == 6)
 {
 printf("Enter the value of radius for cone :\n");
 scanf("%f", &radiusCo);
@@ -111,9 +109,8 @@ VCO= (3.14*(radiusCo*radiusCo)*heightCo)/3;
 printf("Surface area of Cone : %.2f\n", SCO);
 printf("Volume of Cone : %.2f\n", VCO);
 
-return 0;
 }
-else if (A == 7);
+else if (A == 7)
 {
 printf("Enter the value of radius for sphere :\n");
 scanf("%f",&rrr);
@@ -122,7 +119,9 @@ VSP= (4/3)*3.14*(rrr*rrr*rrr);
 
 printf("Surface area of sphere : %.2f\n", SSP);
 printf("Volume of sphere : %.2f\n", VSP);
-
-return 0;
+}
+else
+{
+printf("Invalid choice.\n");
 }
 }

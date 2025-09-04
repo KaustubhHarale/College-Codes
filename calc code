@@ -1,5 +1,5 @@
 #include<stdio.h>
-void main() 
+int main() 
 {
 float SC, VC, SCU, VCU, SP, VP, SCY, VCY, SPY, VPY, SCO, VCO, SSP, VSP;
 float sideC, lengthCu, breadthCu, heightCu, basePr, periPr, heightPr, radiusCy;
@@ -17,6 +17,9 @@ printf("Enter the value of side for cone :\n ");
 scanf("%f", &sideC);
 SC=(sideC*sideC)*6;
 VC=sideC*sideC*sideC;
+printf("Surface area of Cone : %.2f\n", SCO);
+printf("Volume of Cone : %.2f\n", VCO);
+return 0;
 }
 else if (A == 2);
 {
@@ -31,6 +34,10 @@ scanf("%f", &heightCu);
 
 SCU=2*(lengthCu+breadthCu+heightCu);
 VCU= lengthCu*breadthCu*heightCu;
+
+printf("Surface area of cuboid : %.2f\n", SCU);
+printf("Volume of cuboid : %.2f\n", VCU);
+return 0;
 }
 else if (A == 3);
 {
@@ -46,6 +53,11 @@ scanf("%f", &heightPr);
 
 SP= 2*(basePr+periPr)*heightPr;
 VP= basePr*heightPr;
+
+printf("Surface area of prism : %.2f\n", SP);
+printf("Volume of prism : %.2f\n", VP);
+
+return 0;
 }
 else if (A == 4);
 {
@@ -57,6 +69,11 @@ scanf("%f", &heightCy);
 
 SCY= 2*3.14*(radiusCy + heightCy);
 VCY= 3.14*(radiusCy*radiusCy)*heightCy;
+
+printf("Surface area of cylinder : %.2f\n", SCY);
+printf("Volume of cylinder : %.2f\n", VCY);
+
+return 0;
 }
 else if (A == 5);
 { "value of base area for pyramid :\n");
@@ -70,6 +87,12 @@ scanf("%f", &heightPy);
 
 SPY=basePy+lateralPy;
 VPY=(basePy*heightPy)/3;
+
+printf("Surface area of Pyramid : %.2f\n", SPY);
+printf("Volume of pyramid : %.2f\n", VPY);
+
+return 0;
+
 }
 else if (A == 6);
 {
@@ -84,6 +107,11 @@ scanf("%f", &heightCo);
 
 SCO= 3.14*radiusCo*(lengthCo+radiusCo);
 VCO= (3.14*(radiusCo*radiusCo)*heightCo)/3;
+
+printf("Surface area of Cone : %.2f\n", SCO);
+printf("Volume of Cone : %.2f\n", VCO);
+
+return 0;
 }
 else if (A == 7);
 {
@@ -91,5 +119,10 @@ printf("Enter the value of radius for sphere :\n");
 scanf("%f",&rrr);
 SSP= 4*3.14*(rrr*rrr);
 VSP= (4/3)*3.14*(rrr*rrr*rrr);
+
+printf("Surface area of sphere : %.2f\n", SSP);
+printf("Volume of sphere : %.2f\n", VSP);
+
+return 0;
 }
 }

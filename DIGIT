@@ -1,0 +1,19 @@
+#include<stdio.h>
+void main () 
+{
+char INPUT;
+printf ("Enter the Charachter ");
+scanf ("%c", &INPUT);
+if ((INPUT>='a' && INPUT<='z') || (INPUT>='A' && INPUT<='Z'))
+{
+printf("This is an Alphabet.\n");
+}
+else if (INPUT>='0' && INPUT<='9')
+{
+printf("This is a digit.\n");
+}
+else
+{
+printf("This is a special charachter");
+}
+}

@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main (){
+int x=10;
+int *p=&x;
+printf("Value of x: %d\n", x);
+printf("Address of x (using pointer p): %u\n\n", p);
+
+printf("Pointer arithmetic demonstration :\n");
+printf("original p: %u\n", p);
+
+p++;
+printf("after p++ :%u\n", p);
+
+p--;
+printf("after p-- :%u\n", p);
+
+p=p+2;
+printf("after p+2 :%u\n", p);
+
+p=p-1;
+printf("after p-1 :%u\n", p);
+
+int arr[5]= {10,20,30,40,50};
+int *ptr = arr;
+
+printf("array element addresses :\n");
+for (int i=0; i<5;i++)
+{
+printf("Address of arr[%d] =%u\n", i, (ptr +i));
+}
+return 0;
+}

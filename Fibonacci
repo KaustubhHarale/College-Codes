@@ -1,0 +1,43 @@
+//Develop programs to display fibonacci series up to n terms using both an iterative function and recursion
+
+#include<stdio.h>
+void fibonacci_iterative(int n);
+int fibonacci_recursive(int n);
+
+int main () {
+int n, i;
+
+printf("Enter the number of terms : ");
+scanf("%d", &n);
+if (n <=0){
+printf("Please enter a positive integer.\n");
+return 0;
+}
+ printf("\nFibonacci series (Iterative) : \n");
+ fibonacci_iterative(n);
+ 
+ printf("\n\nFibonacci Series (Recursive) : \n");
+ for (i=0; i<n; i++){
+ printf("%d", fibonacci_recursive(i));
+ }
+ printf("\n");
+ return 0;
+ }
+ void fibonacci_iterative(int n){
+ int a=0, b=1, next, i;
+  for(i=1; i<+n; i++){
+  printf("%d", a);
+  next = a+b;
+  a=b;
+  b = next;
+  }
+  }
+  int fibonacci_recursive(int n){
+  if (n ==0)
+  return 0;
+  else if (n==1)
+  return 1;
+  else 
+  return fibonacci_recursive(n-1) + fibonacci_recursive(n-2);
+  }
+  

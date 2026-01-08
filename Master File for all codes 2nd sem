@@ -1,0 +1,46 @@
+"""BS=float(input("Enter the basic salary"))
+DA=(BS)*50/100
+HR=(BS)*20/100
+GS=BS+DA+HR
+print("house rent allowance is",HR)
+print("Gross salary of the emplyee is",GS)"""
+
+"""
+SP=float(input("\nEnter the selling price of total items :"))
+TP=float(input("\nEnter the total profit of items :"))
+CS=(SP-TP)/10
+if(TP>SP):
+ print("\nEnter the right amount")
+else:
+ print("\nCost price of the each item is :",CS)
+"""
+"""
+#Code for Triangle Square and Rectangle
+A=int(input("\nEnter the shape you want to find the area for , \n1:Triangle\n2:Rectangle\n3:Square\n"))
+if(A==1):
+ Base=int(input("\nEnter the value of base :"))
+ Height=int(input("\nEnter the value of height :"))
+ AT=(Base*Height)/2
+ print("\nArea of triangle is :",AT)
+elif(A==2):
+ length=int(input("\nEnter the value of length :"))
+ Breadth=int(input("\nEnter the value of Breadth :"))
+ AR=length*Breadth
+ print("\nArea of rectangle is :",AR)
+elif(A==3):
+ Side=int(input("\nEnter the value of side :"))
+ AS=(Side*Side)
+ print("\nArea of square is :",AS)
+else:
+ print("Enter the right Number!")
+"""
+"""
+days=int(input("Enter the number of days :"))
+if(days>365):
+ years=days/365
+ Rd=days%365
+ Wr=Rd//7
+ print(f"Remaining Years {Rd} and weeks are {Wr} ")
+else:
+ print("Enter the right amount of days")
+"""

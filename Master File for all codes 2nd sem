@@ -44,3 +44,38 @@ if(days>365):
 else:
  print("Enter the right amount of days")
 """
+""""
+b=50000
+p=str(input("Please Enter Your First Name :"))
+print(f"\nWelcome {p} :\n")
+c=int(input("Please Choose What Task You Want To Perform :\n1.Withdrawl money\n2.Check Balance\n3.Exit\n"))
+while(c!=3):
+	while(c==1):
+     	     a=float(input("\nEnter the amount you want to withdrawl :"))
+             if(a>b):
+               print("You dont have sufficient balance")
+               break
+             elif(a<b):
+               b=b-a
+               print("Done, Your available balance is :",b)
+               break
+             elif(a==0):
+               print("Please enter the valid amount")
+             else:
+               print("Thankyou!")
+        if(c==2):
+          print("Your available Balance is :",b)
+        elif(c==3):
+          print("Thankyou!")
+        else:
+          print("Please visit again")
+"""
+
+
+
+
+
+
+
+
+

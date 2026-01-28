@@ -1,0 +1,13 @@
+#python lab 6 
+#list
+
+#a.append             = add value 
+#a.insert             = insert a number 
+#a.remove             = remove a value(1st value) from list (use value)
+#a.pop                = remove a value(last value) from list (use index)
+#max(a)               = prints maximum value in the list
+#min(a)               = prints minimum value from the list
+#for i in a           = makes loop 
+#a.sort()             = assending order
+#a.sort(reverse=true) = decending order 
+#a.extend(b)          = add list b to list a 

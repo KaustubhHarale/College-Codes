@@ -145,3 +145,49 @@ a=[2,3,4,5,6,7,8]
 b=[i for i in a if i%2!=0]
 print(b)
 """
+"""a=(100,4.5,"Hi", "Hello", 100,100,100)
+print(a)
+print(type(a))
+a=list(a)
+print(a)
+print(type(a))
+a[2]="99"
+a[3]="56"
+a=tuple(a)
+print(a)
+print(type(a))"""
+
+"""print(a)
+print(a[2])
+print(len(a))
+dir([])
+print(a.index(100))
+print("No. of repetitions of 100 are",a.count(100))
+a=list(a)
+print(type(a))
+a[0]="99"
+a.insert(2, 43)
+
+a=tuple(a)
+print(type(a))
+"""
+"""
+a=('Kaustubh', '25FC106' , 'A' , 89)
+print("Name of the student is :", a[0])
+print("Roll number of the student is :", a[1])
+print("Division of the Student is :", a[2])
+
+b=('Sumeet', '25FC107' , 'A' , 100)
+print("Name of the student is :", b[0])
+print("Roll number of the student is :", b[1])
+print("Division of the Student is :", b[2])
+
+marks=a[3]
+marks2=b[3]
+if(marks>marks2):
+   print("Highest marks of the student is",marks)
+else:
+    print("Highest marks of the student is", marks2)
+    
+print("Aggregate of the total marks is :",marks+marks2)
+"""

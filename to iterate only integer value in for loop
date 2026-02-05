@@ -1,0 +1,7 @@
+
+A = [['Harry', 37], ['Berry', 37], ['Tina', 37], ['Akriti', 41], ['Harsh', 39]]
+for i in range(len(A)):
+   for j in i:
+      if isinstance(j,int) or isinstance(j, float):
+        print(i,j)
+      

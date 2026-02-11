@@ -198,6 +198,8 @@ p={3,8,9}
 Unionset=s.union(p)
 print(Unionset)
 c=p.symmetric_difference(s)
+q=s.copy()
+print(q)
 print(c)
 
 """

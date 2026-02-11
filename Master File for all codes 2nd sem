@@ -191,3 +191,13 @@ else:
     
 print("Aggregate of the total marks is :",marks+marks2)
 """
+"""
+
+s={78,89,12,9,8,3}
+p={3,8,9}
+Unionset=s.union(p)
+print(Unionset)
+c=p.symmetric_difference(s)
+print(c)
+
+"""

@@ -192,14 +192,49 @@ else:
 print("Aggregate of the total marks is :",marks+marks2)
 """
 """
-
+"""
 s={78,89,12,9,8,3}
 p={3,8,9}
+l=[]
 Unionset=s.union(p)
+Intersectionset=p.intersection(s)
 print(Unionset)
+print(Intersectionset)
+e=s.difference(p)
 c=p.symmetric_difference(s)
-q=s.copy()
-print(q)
-print(c)
-
+d=s.copy()
+print(s.issubset(p))
+print(s.issuperset(p))
+print(d)
+print(e)
+My=set(l)
+print(l)
+"""
+"""
+dict1={}
+print(type(dict1))
+dict1={"name":"kaustubh","Roll no.":"25FC106"}
+x=dict1["Roll no."]
+print(x)
+y=dict1.get("name")
+print(y)
+update=dict1.update({"name1":"Shreyash","Roll no.1":"25FC106"})
+print(dict1)
+print(dict1.keys())
+print(dict1.values())
+for i in dict1.items():
+  print(i)
+"""
+"""
+dict1={}
+dict1={"name":"kaustubh","Roll no.":"25FC106"}
+dict1.pop("name")
+print(dict1)
+del dict1["Roll no."]
+print(dict1)
+del dict1
+dict2={"name":"Kaustubh"}
+dict2.clear()
+print(dict2)
+del dict2
 """

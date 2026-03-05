@@ -238,3 +238,11 @@ dict2.clear()
 print(dict2)
 del dict2
 """
+"""
+inline function 
+
+m=lambda x,y:x*y
+result=m(20,30)
+print(result)
+
+"""

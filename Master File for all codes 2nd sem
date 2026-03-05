@@ -246,3 +246,24 @@ result=m(20,30)
 print(result)
 
 """
+"""
+m=lambda x:x*x
+result=m(int(input("Enter the number :")))
+print("The square of the given number is :",result)
+"""
+"""
+m=lambda x: "Even" if x%2==0 else "Odd"
+result = m(int(input("Enter the number: ")))
+print("Number is :",result)
+"""
+"""
+a = [1, 2, 3, 4]
+b=lambda x:max(a)
+print(b(a))
+"""
+"""
+from functools import reduce
+c=[1,2,3,4,5,6,7,8,9]
+result=reduce(lambda x,y:x+y,filter(lambda x:x%2==0,c))
+print(result)
+"""

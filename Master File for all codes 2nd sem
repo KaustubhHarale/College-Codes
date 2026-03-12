@@ -281,6 +281,20 @@ print("sum: , average:", sum(10, 20, 30))
 print("average:", avg(10,20,30))
 """
 """
+"""def sum(*args):
+    total = 0
+    for num in args:
+        total += num
+    return total
+def avg(*args):
+    total = 0
+    for num in args:
+        total += num
+    return total/len(args)
+print("sum: , average:", sum(10, 20, 30))
+print("average:", avg(10,20,30))
+"""
+"""
 numbers=input("Numbers :")
 num_list=list(map(int,numbers.split()))
 result=sum(num_list) / len(num_list)
@@ -291,6 +305,7 @@ def demo(*args, **kwargs):
     print("args: ",args)
     print("kwargs: ",kwargs)
 demo(10,20,30 ,name="Raghav", city="Pune")
+"""
 """
 #student info
 def student(*args, **kwargs):
@@ -306,3 +321,16 @@ age=input("age :").split()
 city=input("city :").split()
 student(*subjects,name=name,age=age,city=city)
 """
+#supermarket filing system
+def supermarket(*args, **kwargs):
+    print("Product Prices :")
+    for price in args:
+        total = 0
+        total = price+total
+        return total
+    for key,value in kwargs.items():
+        print(key,":", value)
+prices=input("Prices :").split()
+name=input("Name :").split()
+cid=input("Coustumer id :").split()
+supermarket(*prices,name=name,cid=cid)

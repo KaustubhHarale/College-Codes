@@ -374,3 +374,21 @@ print(q)
 print("Year",now.year)
 print("month",now.month)
 print("Day",now.day)
+"""
+import math
+n=int(input("Enter the number :"))
+result=math.sqrt(n)
+print(result)
+angle=float(input("Enter angle in degrees :"))
+r=math.radians(angle)
+print(r)
+
+a=math.sin(r)
+print(a)
+b=math.cos(r)
+print(b)
+c=math.tan(r)
+print(c)
+"""
+
+

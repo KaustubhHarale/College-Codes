@@ -334,3 +334,43 @@ prices=input("Prices :").split()
 name=input("Name :").split()
 cid=input("Coustumer id :").split()
 supermarket(*prices,name=name,cid=cid)
+"""
+"""
+import random
+a=random.randint(1,10)#for random integers between range
+print(a)
+b=random.uniform(1.9,2.5)#for random float numbers between range
+print("%0.2f"%b)
+c=random.random()#for random between 0.0 and 1.0
+print("%0.2f"%c)
+p=["Maths","Science","English"]
+q=random.choice(p)#for choice in list
+print(q)
+r=random.randrange(1,100,1)#(start,stop,range)(stop is not included)
+print(r)
+t=random.shuffle(p)
+print(p)
+"""
+"""
+import os 
+print(os.getcwd())#to get current directory
+os.chdir("/home/str/kaustubh")
+print(os.getcwd())#to change current directory
+os.mkdir("Kaustubh12")
+print(os.listdir())
+os.chdir("/home/str/kaustubh")
+print(os.getcwd())
+os.remove("Kaustubh12")
+os.rename("kaustubh","Shreyash")
+"""
+"""
+import datetime
+now=datetime.date.today()
+print(now)
+p=datetime.time()
+print(p)
+q=datetime.datetime.now()
+print(q)
+print("Year",now.year)
+print("month",now.month)
+print("Day",now.day)
